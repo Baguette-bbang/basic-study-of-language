@@ -100,3 +100,13 @@ result += undefined;
 
 console.log(result);
 console.log(typeof result);
+
+
+console.log(
+  1 == '1',
+  1 === '1',
+  1 != '1',
+  1 !== '1'
+);
+
+// 어떤 값이 출력될까요?

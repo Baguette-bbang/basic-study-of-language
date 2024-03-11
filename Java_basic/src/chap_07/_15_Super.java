@@ -13,6 +13,4 @@ public class _15_Super {
         System.out.println("-------------------");
         speedCam.takePicture();
     }
-
-
 }
