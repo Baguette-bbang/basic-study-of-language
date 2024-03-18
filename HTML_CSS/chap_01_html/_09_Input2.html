@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>사용자로부터 입력 받기 2</h1>
+  <h2>인풋 태그</h2>
+  <form>
+    <fieldset>
+      <legend><h3>텍스트 관련 인풋 타입</h3></legend>
+      <label for="텍스트">text</label><br>
+      <input 
+        id="텍스트" 
+        type="text"
+        placeholder="5자 이하"
+        maxlength="5"
+      >
+
+      <br><br>
+
+      <label for="비밀번호">password</label><br>
+      <input
+        id="비밀번호"
+        type="password"
+        placeholder="4자 이상"
+        minlength="4"
+      >
+
+      <br><br>
+
+      <label for="검색">search</label><br>
+      <input
+        id="검색"
+        type="search"
+      >
+
+      <br><br>
+
+      <label for="전화번호">tel</label><br>
+      <input
+        id="전화번호"
+        type="tel"
+      >
+      <br><br>
+      <button type="submit">제출</button>
+    </fieldset>
+  </form>
+  <br><br>
+  <form>
+    <fieldset>
+    <legend><h3>숫자 관련 인풋 타입</h3></legend>
+    <label for="numIp">number</label><br>
+    <input
+      id="numIp"
+      type="number"
+      max="10"
+      min="0"
+    >
+    <br><br>
+    <label for="rgIp">range</label><br>
+    <input
+      id="rgIp"
+      type="range"
+      step="10"
+      min="0"
+      max="100"
+    >
+    
+    <br><br>
+    <label for="dtIp">date</label><br>
+    <input
+      id="dtIp"
+      type="date"
+      min="2000-03-12"
+      max="2024-03-20"
+    >
+    </fieldset>
+  </form>
+  <br><br>
+  
+  <form action="#">
+    <fieldset>
+      <legend><h3>체크 관련 인풋 타입</h3></legend>
+      <h4>checkbox</h4>
+      <input
+        id="checkIp"
+        type="checkbox"
+      >
+      <label for="checkIp">유기농</label>
+      <h4>radio</h4>
+      <input 
+        type="radio" 
+        id="f_jack" 
+        name="fruit" 
+        value="jack"
+      >
+      <label for="f_jack">잭푸르트</label>
+
+      <input 
+        type="radio" 
+        id="f_orange"
+        name="fruit"
+        value="orange"
+      >
+      <label for="f_orange">오렌지</label>
+
+      <input 
+        type="radio" 
+        id="f_mango"
+        name="fruit"
+        value="mango"
+        checked
+      >
+      <label for="f_mango">망고</label> <br>
+
+      <input
+        name="vegetable"
+        id="f_carrot"
+        value="carrot"
+        type="radio"
+      >
+      <label for="f_carrot">당근</label>
+
+      <input
+        name="vegetable"
+        id="f_tomato"
+        value="tomato"
+        type="radio"
+        checked
+      >
+      <label for="f_tomato">토마토</label>
+
+      <input
+        name="vegetable"
+        id="f_eggplant"
+        value="eggplant"
+        type="radio"
+      >
+      <label for="f_eggplant">가지</label>
+    </fieldset>
+  </form>
+  <br><br>
+  <form>
+    <fieldset>
+      <legend><h3>기타 인풋 타입</h3></legend>
+      <label for="fileIp">file</label><br>
+      <input 
+        id="fileIp"
+        type="file"
+        accept="image/png, image/jpeg, image/jpg"
+        multiple
+      >
+      <br><br>
+      <label for="hiddenIp">hidden</label><br>
+      <input
+        type="hidden"
+        id="hiddenIp"
+      >
+      <hr>
+      <label for="emailIp">email</label>
+      <input
+        id="emailIp"
+        type="email"
+      > 
+      <br>
+      <button type="submit">제출</button>
+    </fieldset>
+  </form>
+
+  <br><br>
+
+  <form>
+    <fieldset>
+      <legend><h3>인풋 요소 공통(대부분) 속성</h3></legend>
+      <label for="valueIp">value</label><br>
+      <input
+        id="valueIp"
+        type="text"
+        value="지정됨"
+      >
+      <br><br>
+      <label for="atfIp">autofocus</label><br>
+      <input
+        id="atfIp"
+        type="text"
+        placeholder="자동 포커스됨"
+        autofocus
+      >
+      <br><br>
+      <label for="rdonlyIp">readonly</label><br>
+      <input
+        id="rdonlyIp"
+        type="text"
+        value="읽기만 가능, 전송됨"
+        readonly
+      >
+      <br><br>
+      <label for=reqIp>required</label><br>
+      <input
+        id="reqIp"
+        type="text"
+        placeholder="필수입력!"
+        required
+      >
+      <br><br>
+      <label for="diabIp">disabled</label><br>
+      <input
+        id="diabIp"
+        type="text"
+        placeholder="입력불가, 전송 안됨"
+        disabled
+      >
+      <br><br>
+      <input
+        type="radio"
+        id="f_apple"
+        value="apple"
+        name="fruit"
+      >
+      <label for="f_apple">사과</label>
+      &nbsp;
+      <input
+        type="radio"
+        id="f_orange"
+        value="orange"
+        name="fruit"
+      >
+      <label for="f_orange">오렌지</label>
+      &nbsp;
+      <input
+        type="radio"
+        id="f_grape"
+        value="grape"
+        name="fruit"
+        disabled
+      >
+      <label for="f_grape">포도(품절)</label>
+      <br><br><br>
+      <button type="submit">제출</button>
+    </fieldset>
+  </form>
+</body>
+</html>
